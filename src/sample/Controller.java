@@ -10,7 +10,11 @@ public class Controller {
     String nameOfDrink;
     private int priceOfDrink;
     private int summOfPuttingCash;
-    int change = summOfPuttingCash - priceOfDrink;
+    private int change = getSummOfPuttingCash() - getPriceOfDrink();
+
+    public int getChange() {
+        return change;
+    }
 
     public String getNameOfDrink() {
         return nameOfDrink;
@@ -37,11 +41,11 @@ public class Controller {
     }
 
     public void getStart(ActionEvent actionEvent) {
-        System.out.println(change);
+        System.out.println(getChange());
         if (summOfPuttingCash < priceOfDrink) {
             lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Please, put more");
         } else {
-            lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Enjoy your drink\nYour cahnge is:"+change+" UAH.");
+            lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Enjoy your drink\nYour cahnge is:" + change + " UAH.");
         }
     }
 
