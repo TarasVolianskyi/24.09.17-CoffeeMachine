@@ -10,10 +10,14 @@ public class Controller {
     String nameOfDrink;
     private int priceOfDrink;
     private int summOfPuttingCash;
-    private int change = getSummOfPuttingCash() - getPriceOfDrink();
+    private int change;
 
     public int getChange() {
         return change;
+    }
+
+    public void setChange(int z) {
+        this.change = change;
     }
 
     public String getNameOfDrink() {
@@ -40,12 +44,17 @@ public class Controller {
         this.summOfPuttingCash = summOfPuttingCash;
     }
 
+    public int findChange() {
+        int res = getSummOfPuttingCash() - getPriceOfDrink();
+        return res;
+    }
+
     public void getStart(ActionEvent actionEvent) {
-        System.out.println(getChange());
+        findChange();
         if (summOfPuttingCash < priceOfDrink) {
             lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Please, put more");
         } else {
-            lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Enjoy your drink\nYour cahnge is:" + change + " UAH.");
+            lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Enjoy your drink\nYour cahnge is:" + findChange() + " UAH.");
         }
     }
 
