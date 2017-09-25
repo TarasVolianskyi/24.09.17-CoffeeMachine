@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" vgap="10"
+          xmlns="http://javafx.com/javafx/8.0.121" fx:controller="sample.Controller">
+    <children>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="Chouse your drink"/>
+
+                <Button fx:id="btnDrink1" mnemonicParsing="false" onAction="#addDrink1" prefWidth="100.0"
+                        text="Espresso" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <Button fx:id="btnDrink2" mnemonicParsing="false" onAction="#addDrink2" prefWidth="100.0"
+                        text="Americano" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Button fx:id="btnDrink3" mnemonicParsing="false" onAction="#addDrink3" prefWidth="100.0"
+                        text="Americano with milk" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+                <Button fx:id="btnDrink4" mnemonicParsing="false" onAction="#addDrink4" prefWidth="100.0" text="Late"
+                        GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+                <Button fx:id="btnDrink5" mnemonicParsing="false" onAction="#addDrink5" prefWidth="100.0"
+                        text="Cappuchino" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+                <Button fx:id="btnDrink6" mnemonicParsing="false" onAction="#addDrink6" prefWidth="100.0"
+                        text="Mokachino" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
+
+                <Button fx:id="btnDrink7" mnemonicParsing="false" onAction="#addDrink7" prefWidth="100.0"
+                        text="Latte macchiato" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                <Button fx:id="btnDrink8" mnemonicParsing="false" onAction="#addDrink8" prefWidth="100.0"
+                        text="Ristretto" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Button fx:id="btnDrink9" mnemonicParsing="false" onAction="#addDrink9" prefWidth="100.0"
+                        text="Hot chokolate" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+                <Button fx:id="btnDrink10" mnemonicParsing="false" onAction="#addDrink10" prefWidth="100.0"
+                        text="Green tea" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+                <Button fx:id="btnDrink11" mnemonicParsing="false" onAction="#addDrink11" prefWidth="100.0"
+                        text="Black tea" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+                <Button fx:id="btnDrink12" mnemonicParsing="false" onAction="#addDrink12" prefWidth="100.0"
+                        text="Fruit tea" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+
+                <Button fx:id="btnCash1" mnemonicParsing="false" onAction="#puttCash1" prefWidth="100.0" text="1 UAH"
+                        GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                <Button fx:id="btnCash2" mnemonicParsing="false" onAction="#puttCash2" prefWidth="100.0" text="2 UAH"
+                        GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                <Button fx:id="btnCash5" mnemonicParsing="false" onAction="#puttCash5" prefWidth="100.0" text="5 UAH"
+                        GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+                <Button fx:id="btnCash10" mnemonicParsing="false" onAction="#puttCash10" prefWidth="100.0" text="10 UAH"
+                        GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+                <Button fx:id="btnCash20" mnemonicParsing="false" onAction="#puttCash20" prefWidth="100.0" text="20 UAH"
+                        GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+                <Button fx:id="btnCash50" mnemonicParsing="false" onAction="#puttCash50" prefWidth="100.0" text="50 UAH"
+                        GridPane.columnIndex="5" GridPane.rowIndex="5"/>
+
+                <Label fx:id="lbRes" minWidth="300.0" prefHeight="60.0" prefWidth="600.0" text=""
+                       GridPane.rowIndex="6"/>
+                <Button fx:id="btnStart" mnemonicParsing="false" onAction="#getStart" prefHeight="26.0"
+                        prefWidth="400.0" text="Make coffee" GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+
+            </children>
+        </GridPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+</GridPane>
