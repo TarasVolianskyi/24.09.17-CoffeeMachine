@@ -27,6 +27,16 @@ public class Helper {
     private final int priceOfDrink11 = 15;
     private final int priceOfDrink12 = 15;
 
+    private int cashInside;
+
+    public int getCashInside() {
+        return cashInside;
+    }
+
+    public Helper() {
+        this.cashInside = 0;
+    }
+
     public String getNameOfDrink1() {
         return nameOfDrink1;
     }
@@ -121,5 +131,15 @@ public class Helper {
 
     public int getPriceOfDrink12() {
         return priceOfDrink12;
+    }
+
+    public int putMoney (int value){
+        cashInside+= value;
+        return cashInside;
+    }
+
+    public int makeCoffee(int price){
+        cashInside-=price;
+        return cashInside;
     }
 }

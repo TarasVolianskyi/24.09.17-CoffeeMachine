@@ -73,7 +73,7 @@
                 <Button fx:id="btnCash50" mnemonicParsing="false" onAction="#puttCash50" prefHeight="60.0"
                         prefWidth="100.0" text="50 UAH" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
 
-                <Label fx:id="lbRes" minHeight="60.0" minWidth="300.0" prefHeight="65.0" prefWidth="600.0" text=""
+                <Label fx:id="lbRes" minHeight="60.0" minWidth="600.0" prefHeight="65.0" prefWidth="600.0" text=""
                        GridPane.rowIndex="6">
                     <font>
                         <Font size="12.0"/>

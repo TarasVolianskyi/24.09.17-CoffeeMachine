@@ -36,22 +36,22 @@ public class Controller {
         this.priceOfDrink = priceOfDrink;
     }
 
-    public int getSummOfPuttingCash() {
+   /* public int getSummOfPuttingCash() {
         return summOfPuttingCash;
     }
 
     public void setSummOfPuttingCash(int summOfPuttingCash) {
         this.summOfPuttingCash = summOfPuttingCash;
-    }
+    }*/
 
     public int findChange() {
-        int res = getSummOfPuttingCash() - getPriceOfDrink();
+        int res = myHelper.getCashInside() - getPriceOfDrink();
         return res;
     }
 
     public void getStart(ActionEvent actionEvent) {
         findChange();
-        if (summOfPuttingCash < priceOfDrink) {
+        if (myHelper.getCashInside() < priceOfDrink) {
             lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Please, put more");
         } else {
             lbRes.setText("Your choice is - " + nameOfDrink + ", price is - " + priceOfDrink + " UAH  \n" + "Enjoy your drink\nYour cahnge is:" + findChange() + " UAH.");
@@ -64,6 +64,7 @@ public class Controller {
         String nameOfChoice = myHelper.getNameOfDrink1();
         setPriceOfDrink(priceOfChoice);
         setNameOfDrink(nameOfChoice);
+
     }
 
     public void addDrink2(ActionEvent actionEvent) {
@@ -144,27 +145,27 @@ public class Controller {
     }
 
     public void puttCash1(ActionEvent actionEvent) {
-        setSummOfPuttingCash(1);
+        myHelper.putMoney(1);
     }
 
     public void puttCash2(ActionEvent actionEvent) {
-        setSummOfPuttingCash(2);
+        myHelper.putMoney(2);
     }
 
     public void puttCash5(ActionEvent actionEvent) {
-        setSummOfPuttingCash(5);
+        myHelper.putMoney(5);
     }
 
     public void puttCash10(ActionEvent actionEvent) {
-        setSummOfPuttingCash(10);
+        myHelper.putMoney(10);
     }
 
     public void puttCash20(ActionEvent actionEvent) {
-        setSummOfPuttingCash(20);
+        myHelper.putMoney(20);
     }
 
     public void puttCash50(ActionEvent actionEvent) {
-        setSummOfPuttingCash(50);
+        myHelper.putMoney(50);
     }
 
 }
